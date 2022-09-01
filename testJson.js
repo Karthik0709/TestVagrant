@@ -15,6 +15,8 @@ const checkForeignPlayers = async (number) => {
     }, 0);
     if (internationalPlayerCount > number)
         throw new Error("More than " + number + " Internaional Players");
+    else
+        console.info("Validated that International Players are not more than " + number);
 }
 
 const checkWicketKeeperExist = async () => {
@@ -23,9 +25,10 @@ const checkWicketKeeperExist = async () => {
         //console.log(play.country);
         return (play.role == 'Wicket-keeper') ? ++keep : keep;
     }, 0);
-    if (keeper == 0) {
+    if (keeper == 0)
         throw new Error("Unexpected Keeper Count " + keeper);
-    }
+    else
+        console.info("Validated that Atleast 1 Wicket-Keeper is placed in the team " + number);
 }
 
 checkForeignPlayers(4);
