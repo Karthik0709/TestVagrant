@@ -4,3 +4,4 @@
   - Install Node.js latest version<br/>
   - Execute "npm i" command in terminal from root folder<br/>
   - Run command "node testJson.js" <br/>
+  - Verify Test Results in Console
