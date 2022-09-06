@@ -1,0 +1,19 @@
+{
+  "name": "vagrant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testJson.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "nightwatch": "^2.3.4"
+  },
+  "devDependencies": {
+    "geckodriver": "^3.0.2"
+  }
+}
